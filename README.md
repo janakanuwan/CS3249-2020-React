@@ -209,12 +209,19 @@ const parseHeroData =(dataArray = []) =>  dataArray.map( (dataItem) =>
     )
 );
 
+// filter by publisher
+const filteredHeroesByPublisher = (publisher, heroDataArray) =>
+    heroDataArray.filter(hero => publisher === hero.publisher);
+
 function App() {
     // initialize
     const data = parseHeroData(rawData);
+    const publishers = ['Marvel Comics', 'DC Comics'];
 
     return (
-      <HeroPanel heroes={data} />
+        <div>
+            {publishers.map( (publisher) => <HeroPanel heroes={filteredHeroesByPublisher(publisher, data)} />)}
+        </div>
     );
 }
 
