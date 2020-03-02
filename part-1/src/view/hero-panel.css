@@ -1,0 +1,9 @@
+/* hero-panel */
+.hero-panel {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hero-panel-header {
+    flex:1 0 100%;
+}
