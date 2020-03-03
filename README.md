@@ -27,7 +27,7 @@ npm start
 ## Part 1: Creating the UI with based on view tree
 
 We want to change the UI as follows:
-![Web Page](./super_heroes.png) 
+![Web Page](./part-1/super_heroes.png) 
 
 ### Steps
 
@@ -265,7 +265,7 @@ export default App;
 ## Part 2: Adding interactions
 
 We want to change the UI as follows:
-![Web Page](./new_hero.png)
+![Web Page](./part-2/new_hero.png)
 
 NOTE: Now 'Powers' are shown in a bar chart.
 
