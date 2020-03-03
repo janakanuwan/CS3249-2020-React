@@ -1,0 +1,9 @@
+/* src/view/publisher-view.css */
+.publisher-view {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.publisher-view-header {
+    flex:1 0 100%;
+}

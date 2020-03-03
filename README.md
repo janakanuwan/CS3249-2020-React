@@ -1,8 +1,31 @@
 # CS3249-2020-React-Tutorial
 
+## To directly use the files in this project
+
+1. Download or clone
+```bash
+git clone https://github.com/janakanuwan/CS3249-2020-React.git
+```
+
+2. Go to the React root directory/folder (e.g. `part-1` or `part-2`)
+```bash
+cd part-1
+```
+
+3. Install dependencies (will create `node_modules` directory)
+```bash
+npm install
+```
+
+4. Start the application
+```bash
+npm start
+```
+
+
 ## Part 1: Creating the UI with based on view tree
 
-1. Create the react project with `create-react-app`
+1. Create the react project (name: part-1) with `create-react-app`
 ```bash
 npx create-react-app part-1
 ```
@@ -131,11 +154,10 @@ class PublisherView extends React.Component{
 
         // What will happen if heroes array is empty?
         const publisher = heroes[0]["publisher"];
-
+	// Use JS map fucntion to create multiple heroes with looping
         const heroViews = heroes.map( (heroData) => <HeroView hero={heroData}/> )
 
-        // NOTE: html uses simple names for its attributes, but JSX use camel case!
-        // IMPORTANT: Here we only load one hero. How can we load multiple heros?
+        // NOTE: HTML uses simple names for its attributes, but JSX uses camel case!
         return (
             <div>
                 <h2>Super Heroes from {publisher} </h2>
@@ -181,7 +203,7 @@ export default Hero;
 
 4. Render the react components from `src/App.js`
 
->- We will use data from a file to initilize the page
+>- We will use data from a file to initialize the page
 
 ```javascript
 import React from 'react';
@@ -195,7 +217,7 @@ import PublisherView from './view/PublisherView'
 import Hero from './model/Hero.model'
 import PowerStats from "./model/PowerStats.model";
 
-// data [NOTE: generally data comes from database or from a backend server]
+// data [NOTE: generally data comes from a database or a backend server]
 import rawData from './data'
 
 // convert the data to supported format
@@ -230,3 +252,23 @@ function App() {
 export default App;
 
 ```
+
+
+## Part 2: Adding interactions
+
+1. Create the react project (name: part-2) with `create-react-app`
+```bash
+npx create-react-app part-2
+```
+
+2. Move to the new directory and start the project
+```bash
+cd part-2
+npm start
+```
+
+
+3.  Copy all the files in `part-1/src` to `src` directory (We will modify them!)
+
+4. 
+
