@@ -16,7 +16,6 @@ npm start
 
 3. Create React components to show hero information
 ```javascript
-// src/view/PowerStats.jsx
 import React from 'react'
 
 class PowerStatsView extends React.Component{
@@ -41,6 +40,7 @@ class PowerStatsView extends React.Component{
     }
 }
 
+// NOTE: you need to 'export' the component to access it by other files (if all components are in a single file, you do not need to 'export')
 export default PowerStatsView
 ```
 >- What is meant by 'export'? Hint: [Modules](http://exploringjs.com/es6/ch_modules.html)
@@ -195,7 +195,7 @@ import HeroPanel from './view/HeroPanel'
 import Hero from './model/Hero.model'
 import PowerStats from "./model/PowerStats.model";
 
-// data
+// data [NOTE: generally data comes from database or from a backend server]
 import rawData from './data'
 
 // convert the data to supported format
@@ -213,6 +213,7 @@ const parseHeroData =(dataArray = []) =>  dataArray.map( (dataItem) =>
 const filteredHeroesByPublisher = (publisher, heroDataArray) =>
     heroDataArray.filter(hero => publisher === hero.publisher);
 
+// App component: in functional format instead of extending from React.Component
 function App() {
     // initialize
     const data = parseHeroData(rawData);
@@ -220,6 +221,7 @@ function App() {
 
     return (
         <div>
+            {/* use the JS functions directly inside the JSX syntax! */}
             {publishers.map( (publisher) => <HeroPanel heroes={filteredHeroesByPublisher(publisher, data)} />)}
         </div>
     );

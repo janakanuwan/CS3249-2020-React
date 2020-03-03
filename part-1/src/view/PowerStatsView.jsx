@@ -22,4 +22,5 @@ class PowerStatsView extends React.Component{
     }
 }
 
+// NOTE: you need to 'export' the component to access it by other files (if all components are in a single file, you do not need to 'export')
 export default PowerStatsView
