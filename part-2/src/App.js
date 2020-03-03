@@ -36,7 +36,7 @@ function App() {
     return (
         <div>
             {/* use the JS functions directly inside the JSX syntax! */}
-            {publishers.map( (publisher) => <PublisherView heroes={filteredHeroesByPublisher(publisher, data)} />)}
+            {publishers.map( (publisher) => <PublisherView key={publisher} heroes={filteredHeroesByPublisher(publisher, data)} />)}
         </div>
     );
 }

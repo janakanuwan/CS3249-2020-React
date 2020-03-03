@@ -18,7 +18,8 @@ class PublisherView extends React.Component{
         const publisher = heroes[0]["publisher"];
 
         // Use JS map function to create multiple heroes with looping
-        const heroViews = heroes.map( (heroData) => <HeroView hero={heroData}/> )
+        // What is meant by 'key'?
+        const heroViews = heroes.map( (heroData) => <HeroView key={heroData.id} hero={heroData}/> );
 
         // NOTE: HTML uses simple names for its attributes, but JSX uses camel case!
         return (
