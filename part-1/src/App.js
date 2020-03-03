@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 
 // React component
-import HeroPanel from './view/HeroPanel'
+import PublisherView from './view/PublisherView'
 
 // model classes
 import Hero from './model/Hero.model'
@@ -36,7 +36,7 @@ function App() {
     return (
         <div>
             {/* use the JS functions directly inside the JSX syntax! */}
-            {publishers.map( (publisher) => <HeroPanel heroes={filteredHeroesByPublisher(publisher, data)} />)}
+            {publishers.map( (publisher) => <PublisherView heroes={filteredHeroesByPublisher(publisher, data)} />)}
         </div>
     );
 }

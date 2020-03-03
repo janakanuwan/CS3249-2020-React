@@ -3,9 +3,9 @@ import React from 'react'
 // React Component
 import HeroView from './HeroView'
 
-import './hero-panel.css'
+import './publisher-panel.css'
 
-class HeroPanel extends React.Component{
+class PublisherView extends React.Component{
 
     constructor(props) {
         super(props);
@@ -24,10 +24,10 @@ class HeroPanel extends React.Component{
         return (
             <div>
                 <h2>Super Heroes from {publisher} </h2>
-                <div className={"hero-panel"}> {heroViews} </div>
+                <div className={"publisher-panel"}> {heroViews} </div>
             </div>
         );
     }
 }
 
-export default HeroPanel
+export default PublisherView

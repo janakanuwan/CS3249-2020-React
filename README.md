@@ -101,13 +101,13 @@ export default HeroView
 ```
 
 ```css
-/* src/view/hero-panel.css */
-.hero-panel {
+/* src/view/publisher-panel.css */
+.publisher-panel {
     display: flex;
     flex-flow: row wrap;
 }
 
-.hero-panel-header {
+.publisher-panel-header {
     flex:1 0 100%;
 }
 ```
@@ -120,7 +120,7 @@ import HeroView from './HeroView'
 
 import './hero-panel.css'
 
-class HeroPanel extends React.Component{
+class PublisherView extends React.Component{
 
     constructor(props) {
         super(props);
@@ -145,7 +145,7 @@ class HeroPanel extends React.Component{
     }
 }
 
-export default HeroPanel
+export default PublisherView
 ```
 
 4. Create the model objects
@@ -189,7 +189,7 @@ import React from 'react';
 import './App.css';
 
 // React component
-import HeroPanel from './view/HeroPanel'
+import PublisherView from './view/PublisherView'
 
 // model classes
 import Hero from './model/Hero.model'
@@ -222,10 +222,11 @@ function App() {
     return (
         <div>
             {/* use the JS functions directly inside the JSX syntax! */}
-            {publishers.map( (publisher) => <HeroPanel heroes={filteredHeroesByPublisher(publisher, data)} />)}
+            {publishers.map( (publisher) => <PublisherView heroes={filteredHeroesByPublisher(publisher, data)} />)}
         </div>
     );
 }
 
 export default App;
+
 ```
