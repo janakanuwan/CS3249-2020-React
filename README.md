@@ -29,6 +29,8 @@ npm start
 We want to change the UI as follows:
 ![Web Page](./part-1/super_heroes.png) 
 
+Data Source: [SuperHero API](https://superheroapi.com/)
+
 ### Steps
 
 1. Create the react project (name: part-1) with `create-react-app`
