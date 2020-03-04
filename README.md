@@ -53,7 +53,7 @@ npm start
 3. Create view components using React.
 
 >- What is `props`?
->- How the variables are accessed in (JSX)[https://devhints.io/react#jsx-patterns]?  
+>- How the variables are accessed in (JSX)[https://devhints.io/react#jsx-patterns]?  [NOTE: curly brackets]
 
 ```javascript
 // src/view/PowerStatsView.jsx
