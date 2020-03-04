@@ -34,8 +34,6 @@ Data Source: [SuperHero API](https://superheroapi.com/)
 >- What is the view tree?
 >- What are the view components? 
 >- What are the properties of view components?
->- What are the model classes? 
->- What are the properties of model classes?
 
 
 ### Steps
@@ -54,7 +52,11 @@ npm start
 
 3. Create view components using React.
 
+>- What is `props`?
+>- How the variables are accessed in (JSX)[https://devhints.io/react#jsx-patterns]?  
+
 ```javascript
+// src/view/PowerStatsView.jsx
 import React from 'react'
 
 class PowerStatsView extends React.Component{
@@ -72,7 +74,9 @@ class PowerStatsView extends React.Component{
         return (
             <div>
                 <p>Powers: </p>
-                <ul> {powerList} </ul>
+                <ul> 
+                	{powerList} 
+                </ul>
                 {/* NOTE: JSX comments */}
             </div>
         );
@@ -152,6 +156,7 @@ export default HeroView
 ```
 
 ```javascript
+// src/model/HeroView.js
 import React from 'react'
 
 // React Component
@@ -187,7 +192,7 @@ class PublisherView extends React.Component{
 export default PublisherView
 ```
 
-4. Create the model classes using JS.
+4. Create the data classes using JS.
 
 ```javascript
 // src/model/PowerStats.model.js
@@ -293,10 +298,9 @@ cd part-2
 npm start
 ```
 
-
 3. Copy all the files in `part-1/src` to `src` directory (We will modify them!)
 
-4. Let's use '[canvasJS](https://canvasjs.com/react-charts/column-chart/)'. Install '[recharts](https://github.com/recharts/recharts)' as a dependency
+4. Let's use '[Recharts](http://recharts.org/en-US/)'. Install '[recharts](https://github.com/recharts/recharts)' as a dependency
 ```bash
 npm i -S recharts
 # or 'npm install --save recharts'
