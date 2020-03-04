@@ -31,6 +31,13 @@ We want to change the UI as follows:
 
 Data Source: [SuperHero API](https://superheroapi.com/)
 
+>- What is the view tree?
+>- What are the view components? 
+>- What are the properties of view components?
+>- What are the model classes? 
+>- What are the properties of model classes?
+
+
 ### Steps
 
 1. Create the react project (name: part-1) with `create-react-app`
@@ -45,7 +52,8 @@ npm start
 ```
 
 
-3. Create React components to show hero information
+3. Create view components using React.
+
 ```javascript
 import React from 'react'
 
@@ -179,7 +187,8 @@ class PublisherView extends React.Component{
 export default PublisherView
 ```
 
-4. Create the model objects
+4. Create the model classes using JS.
+
 ```javascript
 // src/model/PowerStats.model.js
 class PowerStats {
