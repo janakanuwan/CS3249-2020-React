@@ -479,6 +479,7 @@ class HeroView extends React.Component{
 ```
 >- Why 'onClick' is in camel case instead of 'onclick' as in HTML button format?
 >- Why do you have to bind functions inside the constructor?
+>- `onClick={this.increaseStrength}` does not have brackets like, `this.increaseStrength()`. Why?
 
 9. Using local state to show values
     - Where should we keep that state? How do we decide that? Hint: [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
