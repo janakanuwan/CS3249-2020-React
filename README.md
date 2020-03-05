@@ -527,12 +527,12 @@ class HeroView extends React.Component{
 ```
 
 10. Changing the state based on events
-    - What is the expected behavior of the state when you click "Increase Strength" (or "Decrease Strength")?
-    - How can we change the state? Hint: Use the inbuilt `this.setState()` to update the component's local state
-    - IMPORTANT: Three things you should know about [setState()](https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly)
-           - Do Not Modify State Directly 
-           - State Updates May Be Asynchronous
-           - State Updates are Merged
+	- What is the expected behavior of the state when you click "Increase Strength" (or "Decrease Strength")?
+	- How can we change the state? Hint: Use the inbuilt `this.setState()` to update the component's local state
+	- IMPORTANT: Three things you should know about [setState()](https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly)
+		- Do Not Modify State Directly 
+		- State Updates May Be Asynchronous
+		- State Updates are Merged
 ```javascript
 // src/view/HeroView.jsx
 
